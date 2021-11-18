@@ -1,16 +1,7 @@
 import Head from "next/head";
 
-import {
-  Flex,
-  FormControl,
-  VStack,
-  FormLabel,
-  Center,
-  Link as ChakraLink,
-} from "@chakra-ui/react";
-import { GeneralInput } from "@/components/GeneralInput";
+import { Flex, VStack, Center } from "@chakra-ui/react";
 import { Imagelogo } from "@/components/ImageLogo";
-import { GeneralButton } from "@/components/GeneralButton/GeneralButton";
 import { LoginForm } from "@/components/LoginForm";
 
 export default function Home() {
