@@ -1,9 +1,9 @@
 {
-  "name": "typescript-nextjs-starter",
+  "name": "matchup-notepad",
   "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
+  "author": "Gustavo Roberge Warmling <gustavowarmling@gmail.com> (@gustavowarmling)",
   "license": "MIT",
   "keywords": [
     "nextjs",
@@ -27,6 +27,11 @@
     ]
   },
   "dependencies": {
+    "@chakra-ui/icons": "1.1.1",
+    "@chakra-ui/react": "1.7.1",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
+    "framer-motion": "4",
     "next": "12.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -43,12 +48,9 @@
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.3",
-    "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-typescript": "2.5.0",
-    "eslint-plugin-prettier": "4.0.0",
     "husky": "7.0.4",
     "lint-staged": "11.2.6",
-    "prettier": "2.4.1",
     "typescript": "4.4.4"
   },
   "config": {
