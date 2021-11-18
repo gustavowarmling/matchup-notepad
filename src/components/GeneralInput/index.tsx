@@ -6,5 +6,7 @@ type GeneralInputProps = {
 };
 
 export function GeneralInput({ placeholder, type }: GeneralInputProps) {
-  return <Input placeholder={placeholder} type={type} color="white" />;
+  return (
+    <Input placeholder={placeholder} type={type} backgroundColor="white" />
+  );
 }

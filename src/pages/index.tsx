@@ -6,9 +6,12 @@ import {
   VStack,
   FormLabel,
   Center,
-  Button,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { GeneralInput } from "@/components/GeneralInput";
+import { Imagelogo } from "@/components/ImageLogo";
+import { GeneralButton } from "@/components/GeneralButton/GeneralButton";
+import { LoginForm } from "@/components/LoginForm";
 
 export default function Home() {
   return (
@@ -34,19 +37,9 @@ export default function Home() {
           h="100vh"
           backgroundColor="mainColor.400"
         >
-          <FormControl id="email">
-            <FormLabel color="white">Endereço de Email</FormLabel>
-            <GeneralInput placeholder="garen@demacia.com" type="email" />
-          </FormControl>
+          <Imagelogo />
 
-          <FormControl id="password">
-            <FormLabel color="white">Senha</FormLabel>
-            <GeneralInput placeholder="digite sua senha" type="password" />
-          </FormControl>
-
-          <Button type="submit" isFullWidth>
-            Entrar
-          </Button>
+          <LoginForm />
         </VStack>
 
         <Center w="fill-available">tutorial</Center>
