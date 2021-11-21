@@ -1,17 +1,8 @@
-import {
-  FormControl,
-  FormLabel,
-  Link,
-  HStack,
-  Divider,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { FormControl, FormLabel, VStack } from "@chakra-ui/react";
 import { GeneralButton } from "../GeneralButton/GeneralButton";
 import { GeneralInput } from "../GeneralInput";
-import { SocialLogin } from "../SocialLogin";
 
-export function LoginForm() {
+export function SigninForm() {
   return (
     <VStack paddingX={{ base: 4, lg: 24 }} as="form" spacing={8}>
       <FormControl id="email">
@@ -24,21 +15,15 @@ export function LoginForm() {
         <GeneralInput placeholder="digite sua senha" type="password" />
       </FormControl>
 
-      <GeneralButton text="Entrar" type="submit" />
+      <FormControl id="repeated-password">
+        <FormLabel color="white">Repetir senha</FormLabel>
+        <GeneralInput
+          placeholder="digite novamente sua senha"
+          type="password"
+        />
+      </FormControl>
 
-      <Link href="/" color="white" fontWeight="bold">
-        Esqueceu a sua senha?
-      </Link>
-
-      <HStack w="100%">
-        <Divider />
-        <Text fontWeight="bold" color="white">
-          OU
-        </Text>
-        <Divider />
-      </HStack>
-
-      <SocialLogin />
+      <GeneralButton text="Cadastrar" type="submit" />
     </VStack>
   );
 }

@@ -2,16 +2,15 @@ import Head from "next/head";
 
 import {
   Flex,
-  FormControl,
-  VStack,
-  FormLabel,
   Center,
-  Link as ChakraLink,
+  VStack,
+  Tabs,
+  TabList,
+  Tab,
+  TabPanels,
+  TabPanel,
 } from "@chakra-ui/react";
-import { GeneralInput } from "@/components/GeneralInput";
-import { Imagelogo } from "@/components/ImageLogo";
-import { GeneralButton } from "@/components/GeneralButton/GeneralButton";
-import { LoginForm } from "@/components/LoginForm";
+import { SessionMenu } from "@/components/SessionMenu";
 
 export default function Home() {
   return (
@@ -26,23 +25,33 @@ export default function Home() {
       </Head>
 
       <Flex>
-        <VStack
-          as="form"
-          spacing={8}
-          align="center"
-          justifyContent="center"
-          paddingX={24}
-          maxW={600}
-          w="100%"
-          h="100vh"
-          backgroundColor="mainColor.400"
-        >
-          <Imagelogo />
+        <SessionMenu />
 
-          <LoginForm />
+        <VStack w="fill-available">
+          <Center>
+            <Tabs>
+              <TabList>
+                <Tab>One</Tab>
+                <Tab>Two</Tab>
+                <Tab>Three</Tab>
+              </TabList>
+
+              <TabPanels>
+                <TabPanel>
+                  <p>one!</p>
+                </TabPanel>
+                <TabPanel>
+                  <p>two!</p>
+                </TabPanel>
+                <TabPanel>
+                  <p>three!</p>
+                </TabPanel>
+              </TabPanels>
+            </Tabs>
+          </Center>
+          <Center>Propaganda</Center>
+          <Center>Video</Center>
         </VStack>
-
-        <Center w="fill-available">tutorial</Center>
       </Flex>
     </div>
   );

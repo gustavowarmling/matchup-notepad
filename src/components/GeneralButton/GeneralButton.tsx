@@ -7,7 +7,7 @@ type GeneralButtonProps = {
 
 export function GeneralButton({ type = `button`, text }: GeneralButtonProps) {
   return (
-    <Button type={type} isFullWidth>
+    <Button type={type} colorScheme="twitter" isFullWidth p={6}>
       {text}
     </Button>
   );
